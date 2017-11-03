@@ -13,7 +13,6 @@
 		6624DC791FACF494004A7507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6624DC771FACF494004A7507 /* Main.storyboard */; };
 		6624DC7B1FACF494004A7507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6624DC7A1FACF494004A7507 /* Assets.xcassets */; };
 		6624DC7E1FACF494004A7507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6624DC7C1FACF494004A7507 /* LaunchScreen.storyboard */; };
-		6624DC861FACF5E0004A7507 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6624DC851FACF5E0004A7507 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		6624DC7A1FACF494004A7507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6624DC7D1FACF494004A7507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6624DC7F1FACF494004A7507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6624DC851FACF5E0004A7507 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6624DC871FACF5E0004A7507 /* RipGuage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RipGuage.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6624DC861FACF5E0004A7507 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +43,6 @@
 		6624DC621FACF494004A7507 = {
 			isa = PBXGroup;
 			children = (
-				6624DC851FACF5E0004A7507 /* AudioToolbox.framework */,
 				6624DC6D1FACF494004A7507 /* RipGuage */,
 				6624DC6C1FACF494004A7507 /* Products */,
 			);
@@ -119,7 +115,7 @@
 						DevelopmentTeam = V73K3PX7M3;
 						SystemCapabilities = {
 							com.apple.InterAppAudio = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -273,7 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RipGuage/RipGuage.entitlements;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RipGuage/Info.plist;
@@ -289,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RipGuage/RipGuage.entitlements;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RipGuage/Info.plist;
